@@ -1,16 +1,3 @@
-"set tags of nginx_tm
-"let nginx_src = "/home/wangyong/nginx_tm/dgram/ /home/wangyong/nginx_tm/service/"
-"autocmd BufWritePost *.c,*.cpp,*.h,*.lua silent execute "![ -d $nginx_src ] && ctags -R $nginx_src 1>/dev/null 2>/dev/null"
-"
-""set filename display
-""set laststatus=2
-"command Lconf execute "!cur=`pwd` && cd ~/nginx-1.15.1/ && ./config.sh && cd $cur"
-"command Lmake execute "!cur=`pwd` && cd ~/nginx-1.15.1/ && make -j8 && cd $cur"
-"command Linstall execute "!cur=`pwd` && cd ~/nginx-1.15.1/ && sudo make install && cd $cur"
-"
-"map <F4> :Lconf<CR>
-"map <F5> :Lmake<CR>
-"map <F6> :Linstall<CR>
 "==============================基本设置==============================
 set number
 set ruler
